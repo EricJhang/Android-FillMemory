@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fillmemory-beta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_Fillmemory">Fillmemory-1M</string>
+    <string name="text_EnterFillsize">輸入FillMemorySize</string>
+    <string name="Start_Button">Start</string>
+    <string name="text_memoryInfoTotal">整體記憶體資訊:  </string>
+    <string name="text_MemoryAvail">當前可用記憶體資訊:  </string>
+    <string name="text_UseMemoryInfo">此次塞入Memory為:  </string>
+    <string name="text_Info"> (輸入10-60)</string>
+
+</resources>

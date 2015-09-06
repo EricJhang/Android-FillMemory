@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fillmemory_beta.MainActivity" >
+
+    <TextView
+        android:id="@+id/text_Fillmemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       
+       android:layout_centerInParent="true"
+         android:layout_below="@+id/text_MemoryInfoAvail"
+        android:layout_marginTop="90dp"
+        android:text="@string/text_Fillmemory"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/text_EnterFillsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 		android:layout_marginLeft="30dp"
+        android:layout_below="@+id/text_Fillmemory"       
+        android:text="@string/text_EnterFillsize"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editMemorySize"
+        android:layout_width="80dp"               
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_EnterFillsize"
+         android:layout_alignTop="@+id/text_EnterFillsize"
+        android:layout_below="@+id/text_Fillmemory"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Start_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editMemorySize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/Start_Button" />
+
+    <TextView
+        android:id="@+id/text_TotalMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/text_memoryInfoTotal"
+        android:text="TextViewTotal" 
+         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_AvailMemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_memoryInfoTotal"
+       android:layout_toRightOf="@+id/text_MemoryInfoAvail"
+ 
+        android:text="TextViewAvail" 
+         android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/text_MemoryInfoAvail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_memoryInfoTotal"
+    
+        android:text="@string/text_MemoryAvail"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_memoryInfoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+  
+        android:layout_alignParentTop="true"
+        android:text="@string/text_memoryInfoTotal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/text_UseMemoryInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_MemoryInfoAvail"
+        android:text="@string/text_UseMemoryInfo" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+      <TextView
+        android:id="@+id/text_UseMemorySize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_MemoryInfoAvail"
+        android:layout_below="@+id/text_MemoryInfoAvail"
+        android:text="text_UseMemorySize" 
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+      <TextView
+          android:id="@+id/text_Info"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/editMemorySize"
+         android:layout_below="@+id/text_Fillmemory" 
+          android:text="@string/text_Info" />
+
+</RelativeLayout>
